@@ -100,7 +100,9 @@ ALI_GENIE_AUTHENTICATION_RESPONSE=yyyyy
 
 只需要在`bot.py`中添加以下代码即可。
 ```python
-from plugins.iot import Iot
+from iot.core import Iot
+from iot.devices import ali_genie
+
 Iot.start("AliGenie")
 ```
 然后可以通过docker等方式启动服务。
@@ -112,7 +114,8 @@ Iot.start("AliGenie")
 以上过程中是实现了基本的消息发送功能，如果想通过天猫精灵终端实现其他功能，比如说建群，编辑名片等操作则需要自己实现。同样也包括 __平台配置__ 和 __项目开发__ 两部分，在项目中可以新建插件通过iotbot的装饰器实现。
 
 ```python
-from plugins.iot import AliGenie, AliGenieResponse, AliGenieRequest
+from iot.devices.ali_genie import AliGenie, AliGenieResponse, AliGenieRequest
+
 @AliGenie.custom_api
 async def _(request: AliGenieRequest) -> AliGenieResponse:
     ...

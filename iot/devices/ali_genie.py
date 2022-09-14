@@ -9,7 +9,8 @@ from nonebot.adapters.onebot.v11 import Message
 import os
 from fastapi import FastAPI
 
-from plugins.iot.device import IotDevice, IotDeviceFactory
+from iot.device import IotDeviceFactory, IotDevice
+
 
 class AliGenieRequestData(BaseModel):
     userOpenId: Optional[str]

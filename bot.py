@@ -1,7 +1,8 @@
 import nonebot
 from nonebot.adapters.onebot.v11 import Adapter
 
-from plugins.iot import Iot
+from iot.core import Iot
+from iot.devices import ali_genie
 
 nonebot.init()
 driver = nonebot.get_driver()

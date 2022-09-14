@@ -1,6 +1,4 @@
-from typing import List
-
-from plugins.iot.device import IotDevice, IotDeviceFactory
+from .device import IotDeviceFactory
 
 
 class Iot:
