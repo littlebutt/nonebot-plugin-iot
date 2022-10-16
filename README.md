@@ -4,7 +4,7 @@
 
 ## 简介
 
-iotbot提供了一套Nonebot2接入物联网的解决方案，目前只包含天猫精灵终端接入，后续会接入树莓派打造属于Nonebot2自己的物联网环境。
+iotbot提供了一套Nonebot2接入物联网的解决方案，目前包含天猫精灵终端接入，树莓派终端接入。
 
 ## 快速上手
 
@@ -30,3 +30,4 @@ python bot.py
 ## 项目配置和搭建
 
 - [天猫精灵终端](./docs/ali_genie.md)
+- [树莓派终端](./docs/raspberry_pi.md)
